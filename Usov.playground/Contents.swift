@@ -1,6 +1,7 @@
 import Foundation
 
 // Глава 5
+// 5.2 Числовые типы данных
 // Составной опреатор присваивания
 
 // Задание 1
@@ -27,3 +28,27 @@ print ("Square area is \(squareArea).")
 Float.pi
 let circumference = 2 * Float.pi * Float(length)
 print ("Circumference is \(circumference).")
+
+// 5.3 Текстовые типы данных
+
+// Задание 1
+var someStr: String = "Hello"
+let someChar: Character = "A"
+var someNumber1: Int = 26
+var someMumber2: Int = 12
+let someResult = someStr + String(someChar) + String(someNumber1 + someMumber2)
+print("Concatenation and interpolation result is \(someResult)")
+
+// Задание 2
+let w = """
+*   *   *
+ * * * *
+  *   *
+"""
+print(w)
+
+// Задание 3
+var currentDay = "7"
+var currentMonth = "november"
+var currentYear = "2018"
+print(currentYear + " " + currentMonth + " " + currentDay)
