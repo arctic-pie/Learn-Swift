@@ -72,4 +72,15 @@ var myHeight: heightType = 173
 var bmi = round(myWeight / pow((Double(myHeight)/100), 2))
 print("\(myName)'s BMI is \(bmi)")
 
+// Глава 6
+// Кортежи (tuples)
+
+// Задание
+var myFav = (film: "Pride and Prejudice", num: 26, food: "Potato")
+let (film, num, food) = myFav
+var notMyFav = (film: "Die Hard", num: 13, food: "Spinach")
+var replacing = myFav
+myFav = notMyFav
+notMyFav = replacing
+var numbers = (myFav.num, notMyFav.num, myFav.num - notMyFav.num)
 
