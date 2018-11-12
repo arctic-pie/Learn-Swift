@@ -52,3 +52,24 @@ var currentDay = "7"
 var currentMonth = "november"
 var currentYear = "2018"
 print(currentYear + " " + currentMonth + " " + currentDay)
+
+// 5.4 Логические значения
+// Задание
+var someBool1: Bool = true
+var someBool2 = false
+let boolResult1 = someBool1 && someBool2
+let boolResult2 = someBool1 || someBool2
+print(boolResult1, boolResult2)
+
+// 5.5 Псевдонимы типов
+// Задание
+typealias nameType = String
+typealias weightType = Double
+typealias heightType = Int
+let myName: nameType = "Ksenia"
+var myWeight: weightType = 59.5
+var myHeight: heightType = 173
+var bmi = round(myWeight / pow((Double(myHeight)/100), 2))
+print("\(myName)'s BMI is \(bmi)")
+
+
